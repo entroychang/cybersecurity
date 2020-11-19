@@ -34,7 +34,11 @@
                 </div>
             </form>
             <?php
-                echo $_POST["password"];
+                if ($_POST["password"] === "admin") {
+                    echo "correct <br>";
+                } else {
+                    echo "wrong <br>";
+                }
             ?>
         </div>
     </div>
