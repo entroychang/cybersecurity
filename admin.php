@@ -25,12 +25,17 @@
         <div class="card-body">
             <h3 class="card-title">Login</h3>
             <p class="card-title">Here is the secret place. I bet you can never login.</p>
-            <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Login</button>
-            </div>
-            </div>
+            <form action="/admin.php" method="post">
+                <div class="input-group mb-3">
+                <input type="password" name="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Login</button>
+                </div>
+                </div>
+            </form>
+            <?php
+                echo $_POST["password"];
+            ?>
         </div>
     </div>
 </body>
