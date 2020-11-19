@@ -25,7 +25,7 @@
         <div class="card-body">
             <h3 class="card-title">Login</h3>
             <p class="card-title">Here is the secret place. I bet you can never login.</p>
-            <form action="/admin.php" method="post">
+            <form action="/admin" method="post">
                 <div class="input-group mb-3">
                 <input type="password" name="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon2">
                 <div class="input-group-append">
