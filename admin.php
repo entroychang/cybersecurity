@@ -29,7 +29,7 @@
                 <div class="input-group mb-3">
                 <input type="password" name="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Login</button>
+                    <button class="btn btn-outline-secondary" type="submit">Login</button>
                 </div>
                 </div>
             </form>
