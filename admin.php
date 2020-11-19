@@ -24,10 +24,10 @@
         <img class="card-img-top" src="/img/really.jpg" alt="Card image cap">
         <div class="card-body">
             <h3 class="card-title">Login</h3>
-            <h5 class="card-title">Here is the secret place. I bet you can never login.</h5>
+            <p class="card-title">Here is the secret place. I bet you can never login.</p>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">password@</span>
+                    <span class="input-group-text" id="basic-addon1">password</span>
                 </div>
                 <input type="text" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
             </div>
