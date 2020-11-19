@@ -26,10 +26,10 @@
             <h3 class="card-title">Login</h3>
             <p class="card-title">Here is the secret place. I bet you can never login.</p>
             <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">password</span>
-                </div>
-                <input type="text" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
+            <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">Login</button>
+            </div>
             </div>
         </div>
     </div>
