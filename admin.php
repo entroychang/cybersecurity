@@ -32,6 +32,8 @@ $html = '<!DOCTYPE html>
             <div class="card-body">
                 <h3 class="card-title">Login</h3>
                 <p class="card-title">Here is the secret place. I bet you can never login.</p>
+                <p class="card-title"></p>
+                <p class="card-title"></p>
                 <form action="/admin" method="post">
                     <div class="input-group mb-3">
                     <input type="password" name="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon2">
@@ -61,7 +63,7 @@ $html = '<!DOCTYPE html>
                 $h3 -> nodeValue = "Really ... ";
             }
             foreach ($dom -> getElementsByTagName("p") as $p) {
-                $p -> nodeValue = "OK ... You really login ... \n Raise your hand and say you got me. \n And then I will change my password!!!";
+                $p -> nodeValue = "OK ... You really login ... Raise your hand and say you got me. And then I will change my password!!!";
             }
             $dom -> getElementsByTagName("div") -> item(1) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
             $html = $dom -> saveHTML();
