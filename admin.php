@@ -4,6 +4,7 @@ use function PHPSTORM_META\type;
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+header('content-type:text/html;charset=utf-8');
 $html = '<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -51,7 +52,7 @@ $html = '<!DOCTYPE html>
     if (isset($_POST["password"])) {
         if ($_POST["password"] === "admin") {
             echo "correct <br>";
-            $dom = new DOMDocument;
+            $dom = new DOMDocument();
             $dom -> loadHTML($html);
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 echo(type($img));
