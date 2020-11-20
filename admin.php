@@ -62,8 +62,11 @@ $html = '<!DOCTYPE html>
             foreach ($dom -> getElementsByTagName("h3") as $h3) {
                 $h3 -> nodeValue = "Really ... ";
             }
+            $array = array("OK ... You really login ...", "Raise your hand and say you got me.", "And then I will change my password!!!");
+            $index = 0;
             foreach ($dom -> getElementsByTagName("p") as $p) {
-                $p -> nodeValue = "OK ... You really login ... Raise your hand and say you got me. And then I will change my password!!!";
+                $p -> nodeValue = $array[$index];
+                $index += 1;
             }
             $dom -> getElementsByTagName("div") -> item(1) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
             $html = $dom -> saveHTML();
