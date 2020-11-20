@@ -58,10 +58,10 @@ $html = '<!DOCTYPE html>
                 $img -> setAttribute('src', '/img/really.jpg');
             }
             foreach ($dom -> getElementsByTagName("h3") as $h3) {
-                $h3 -> nodeValue = "REALLY ... ";
+                $h3 -> nodeValue = "Really ... ";
             }
             foreach ($dom -> getElementsByTagName("p") as $p) {
-                $p -> nodeValue = "OK ... You REALLY login ... Raise your hand and say you got me.";
+                $p -> nodeValue = "OK ... You Really login ... <br> Raise your hand and say you got me. <br> And then I will change my password!!!";
             }
             $dom -> getElementsByTagName("div") -> item(1) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
             $html = $dom -> saveHTML();
