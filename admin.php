@@ -52,7 +52,7 @@ $html = '<!DOCTYPE html>
             $dom = new DOMDocument();
             $dom -> loadHTML($html);
             foreach ($dom -> getElementsByTagName("img") as $img) {
-                print_r(type($img));
+                echo(type($img));
             }
             $html = $dom -> saveHTML();
             echo $html;
