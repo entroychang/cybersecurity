@@ -40,7 +40,7 @@
                         $dom = new DOMDocument();
                         $dom -> loadHTML(file_get_contents("admin.php"));
                         $img = $dom -> getElementsByTagName("img") -> item(0);
-                        $this -> $img -> setAttribute("src", "/img/really.jpg");
+                        $img -> setAttribute("src", "/img/really.jpg");
                         $dom -> saveHTML();
                     } else {
                         echo "wrong <br>";
