@@ -63,7 +63,7 @@ $html = '<!DOCTYPE html>
             foreach ($dom -> getElementsByTagName("p") as $p) {
                 $p -> nodeValue = "OK ... You REALLY login ... Raise your hand and say you got me.";
             }
-            $dom -> removeChild($dom -> getElementsByTagName("form") -> item(0));
+            $dom -> getElementsByTagName("div") -> item(1) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
             $html = $dom -> saveHTML();
             echo $html;
         } else {
