@@ -74,6 +74,12 @@ $html = '<!DOCTYPE html>
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', '/img/haha.jpg');
             }
+            foreach ($dom -> getElementsByTagName("h3") as $h3) {
+                $h3 -> nodeValue = "HAHAHAHAHA";
+            }
+            foreach ($dom -> getElementsByTagName("p") as $p) {
+                $p -> nodeValue = "Are you kidding me?";
+            }
             $html = $dom -> saveHTML();
         }   
     }
