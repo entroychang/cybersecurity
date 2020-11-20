@@ -52,10 +52,10 @@ $html = '<!DOCTYPE html>
 
 
     if (isset($_POST["password"])) {
+        $dom = new DOMDocument();
+        libxml_use_internal_errors(true);
+        $dom -> loadHTML($html);
         if ($_POST["password"] === "admin") {
-            $dom = new DOMDocument();
-            libxml_use_internal_errors(true);
-            $dom -> loadHTML($html);
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', '/img/really.jpg');
             }
@@ -70,12 +70,13 @@ $html = '<!DOCTYPE html>
             }
             $dom -> getElementsByTagName("div") -> item(1) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
             $html = $dom -> saveHTML();
-            echo $html;
         } else {
-            echo "wrong <br>";
+            foreach ($dom -> getElementsByTagName("img") as $img) {
+                $img -> setAttribute('src', '/img/haha.jpg');
+            }
         }   
-    } else {
-        echo $html;
     }
+
+    echo $html;
     libxml_use_internal_errors(false);
 ?>
