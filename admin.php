@@ -51,13 +51,21 @@ $html = '<!DOCTYPE html>
 
     if (isset($_POST["password"])) {
         if ($_POST["password"] === "admin") {
-            echo "correct <br>";
             $dom = new DOMDocument();
             libxml_use_internal_errors(true);
             $dom -> loadHTML($html);
             libxml_use_internal_errors(false);
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', '/img/really.jpg');
+            }
+            foreach ($dom -> getElementsByTagName("h3") as $h3) {
+                $h3 -> nodeValue = "REALLY ... ";
+            }
+            foreach ($dom -> getElementsByTagName("p") as $p) {
+                $p -> nodeValue = "OK ... You REALLY login ... Raise your hand and say you got me.";
+            }
+            foreach ($dom -> getElementsByTagName("form") as $form) {
+                $form -> removeChild($form);
             }
             $html = $dom -> saveHTML();
             echo $html;
