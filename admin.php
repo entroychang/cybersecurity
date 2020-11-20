@@ -37,11 +37,11 @@
                 if (isset($_POST["password"])) {
                     if ($_POST["password"] === "admin") {
                         echo "correct <br>";
-                        $dom = new DOMDocument;
+                        $dom = new DOMDocument();
                         $dom -> loadHTML(file_get_contents("admin.php"));
                         $img = $dom -> getElementsByTagName("img") -> item(0);
-                        $img -> setAttribute("src", "/img/really.jpg");
-                        $dom -> saveHTML($img);
+                        $this -> $img -> setAttribute("src", "/img/really.jpg");
+                        $dom -> saveHTML();
                     } else {
                         echo "wrong <br>";
                     }   
