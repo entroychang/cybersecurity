@@ -55,7 +55,7 @@ $html = '<!DOCTYPE html>
             $dom = new DOMDocument();
             $dom -> loadHTML($html);
             foreach ($dom -> getElementsByTagName("img") as $img) {
-                echo $img . "<br>";
+                $img -> setAttribute('src', '/img/really.jpg');
             }
             $html = $dom -> saveHTML();
             echo $html;
