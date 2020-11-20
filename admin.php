@@ -53,7 +53,9 @@ $html = '<!DOCTYPE html>
         if ($_POST["password"] === "admin") {
             echo "correct <br>";
             $dom = new DOMDocument();
+            libxml_use_internal_errors(true);
             $dom -> loadHTML($html);
+            libxml_use_internal_errors(false);
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', '/img/really.jpg');
             }
