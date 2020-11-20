@@ -65,7 +65,7 @@ $html = '<!DOCTYPE html>
                 $p -> nodeValue = "OK ... You REALLY login ... Raise your hand and say you got me.";
             }
             foreach ($dom -> getElementsByTagName("form") as $form) {
-                $form -> removeChild($form);
+                $dom -> removeChild($form);
             }
             $html = $dom -> saveHTML();
             echo $html;
