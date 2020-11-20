@@ -54,7 +54,6 @@ $html = '<!DOCTYPE html>
             $dom = new DOMDocument();
             libxml_use_internal_errors(true);
             $dom -> loadHTML($html);
-            libxml_use_internal_errors(false);
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', '/img/really.jpg');
             }
@@ -73,4 +72,5 @@ $html = '<!DOCTYPE html>
     } else {
         echo $html;
     }
+    libxml_use_internal_errors(false);
 ?>
