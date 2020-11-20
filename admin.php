@@ -74,6 +74,7 @@ $html = '<!DOCTYPE html>
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', '/img/haha.jpg');
             }
+            $html = $dom -> saveHTML();
         }   
     }
 
