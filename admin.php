@@ -1,6 +1,6 @@
 <?php
 
-use function PHPSTORM_META\type;
+// use function PHPSTORM_META\type;
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -55,7 +55,7 @@ $html = '<!DOCTYPE html>
             $dom = new DOMDocument();
             $dom -> loadHTML($html);
             foreach ($dom -> getElementsByTagName("img") as $img) {
-                echo(type($img));
+                echo $img . "<br>";
             }
             $html = $dom -> saveHTML();
             echo $html;
