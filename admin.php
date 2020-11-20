@@ -77,8 +77,11 @@ $html = '<!DOCTYPE html>
             foreach ($dom -> getElementsByTagName("h3") as $h3) {
                 $h3 -> nodeValue = "HAHAHAHAHA";
             }
+            $array = array("Are you kidding me?", "", "");
+            $index = 0;
             foreach ($dom -> getElementsByTagName("p") as $p) {
-                $p -> nodeValue = "Are you kidding me?";
+                $p -> nodeValue = $array[$index];
+                $index += 1;
             }
             $html = $dom -> saveHTML();
         }   
