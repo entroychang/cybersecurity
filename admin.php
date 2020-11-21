@@ -28,7 +28,7 @@ $html = '<!DOCTYPE html>
     <body>
         <header></header>
         <div class="card justify-content-center align-items-center" style="width: 20rem; margin: 0 auto; float: none; margin-bottom: 10px; justify-content:center; align-items:center;">
-            <img class="card-img-top" src="/img/troll.jpg" alt="Card image cap">
+            <img class="card-img-top" src="https://i.imgur.com/YQWUR9b.jpg" alt="Card image cap" loading="eagar">
             <div class="card-body">
                 <h3 class="card-title">Login</h3>
                 <p class="card-title">Here is the secret place. I bet you can never login.</p>
@@ -58,7 +58,6 @@ $html = '<!DOCTYPE html>
         if ($_POST["password"] === "admin") {
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', 'https://i.imgur.com/dO045eV.png');
-                $img -> setAttribute('loading', 'eager');
             }
             foreach ($dom -> getElementsByTagName("h3") as $h3) {
                 $h3 -> nodeValue = "Really ... ";
@@ -73,7 +72,7 @@ $html = '<!DOCTYPE html>
             $html = $dom -> saveHTML();
         } else {
             foreach ($dom -> getElementsByTagName("img") as $img) {
-                $img -> setAttribute('src', '/img/haha.jpg');
+                $img -> setAttribute('src', 'https://i.imgur.com/LiiYqU1.png');
             }
             foreach ($dom -> getElementsByTagName("h3") as $h3) {
                 $h3 -> nodeValue = "HAHAHAHAHA";
