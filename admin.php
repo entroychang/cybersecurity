@@ -57,7 +57,7 @@ $html = '<!DOCTYPE html>
         $dom -> loadHTML($html);
         if ($_POST["password"] === "admin") {
             foreach ($dom -> getElementsByTagName("img") as $img) {
-                $img -> setAttribute('src', 'https://imgur.com/dO045eV');
+                $img -> setAttribute('src', 'https://imgur.com/dO045eV.png');
             }
             foreach ($dom -> getElementsByTagName("h3") as $h3) {
                 $h3 -> nodeValue = "Really ... ";
