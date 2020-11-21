@@ -28,7 +28,7 @@ $html = '<!DOCTYPE html>
     <body>
         <header></header>
         <div class="card justify-content-center align-items-center" style="width: 20rem; margin: 0 auto; float: none; margin-bottom: 10px; justify-content:center; align-items:center;">
-            <img class="card-img-top" src="https://i.imgur.com/YQWUR9b.jpg" alt="Card image cap" loading="eagar">
+            <img class="card-img-top" src="https://i.imgur.com/YQWUR9b.jpg" alt="Card image cap" loading="eager">
             <div class="card-body">
                 <h3 class="card-title">Login</h3>
                 <p class="card-title">Here is the secret place. I bet you can never login.</p>
