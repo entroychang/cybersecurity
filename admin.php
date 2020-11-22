@@ -56,7 +56,7 @@ $html = '<!DOCTYPE html>
         $dom = new DOMDocument();
         libxml_use_internal_errors(true);
         $dom -> loadHTML($html);
-        if ($_POST["password"] === "admin") {
+        if ($_POST["password"] === "thisisbobpizza") {
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', 'https://i.imgur.com/dO045eV.png');
             }
