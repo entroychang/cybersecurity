@@ -1,0 +1,94 @@
+.navbar {
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(8, 230, 171);
+    color: rgb(160, 86, 86);
+    top: 0px;
+    width: 100%;
+    height: 15vh;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    padding-left: 3vw;
+}
+
+.footer {
+    position: fixed;
+    background-color: rgb(8, 230, 171);
+    color: rgb(160, 86, 86);
+    width: 100%;
+    height: 20vh;
+    bottom: 0px;
+}
+
+.footer address {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.footer a {
+    text-decoration:none;
+}
+
+.marquee {
+    font-size: 1.6rem;
+    width: 70%;
+    color: rgb(73, 0, 0);
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(130, 130, 130);
+}
+
+.box {
+    position: relative;
+    top: 15vh;
+    height: 90vh;
+    margin-bottom: 20vh;
+    background-color: white;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.top img {
+    padding: 10px;
+    width: 40%;
+}
+
+.top p {
+    font-size: 2rem;
+}
+
+.text-card {
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: start;
+    font-size: 1.5rem;
+    text-indent : 56px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 750px) {
+    .marquee {
+        display: none;
+    }
+}

@@ -7,79 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/info/css/info.css">
+
     <title>Bob's Blog</title>
 </head>
 
 <body class="bg">
     <div class="navbar">
-        <marquee scrollamount="9" direction="right"><strong>This is Bob Personal Page ~~</strong></marquee>
+        <h1>Bob's Home</h1>
+        <marquee class="marquee" scrollamount="9" direction="right">This is Bob Personal Page ~ ~ ~</marquee>
     </div>
     <div class="container">
         <div class="box">
             <div class="top">
-                <img src="/img/troll.jpg">
-                <p>Hi, my name is Bob</p>
+                <img src="/assets/info/img/bob.jpg">
+                <p>Hi, I am Bob.<br>I like to eat pizza.</p>
             </div>
             <div class="top">
                 <div class="text-card">
-                    Birthday:
+                    Birthday: 1999/02/30
                 </div>
-                <div class="text-card">Favorite:</div>
+
             </div>
         </div>
+    </div>
+    <div class="footer">
+        <address>
+            <p>
+                Email: <a href="mailto:thisisbob@gmail.com">thisisbob@gmail.com</a>
+            </p>
+            <p>
+                Phone: <a href="tel:thisisbob@gmail.com">0912345678</a>
+            </p>
+        </address>
     </div>
 </body>
 
 <style>
-    .navbar {
-        background-color: rgb(8, 230, 171);
-        color: rgb(160, 86, 86);
-        width: 100%;
-        height: 10vh;
-    }
 
-    .bg {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(130, 130, 130);
-    }
-
-    .box {
-        height: 90%;
-        background-color: white;
-    }
-
-    .top {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .top img {
-        padding: 10px;
-        width: 40%;
-    }
-
-    .top p {
-        font-size: 2rem;
-    }
-
-    .text-card {
-        width: 100%;
-        display: flex;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        justify-content: start;
-        font-size: 1.5rem;
-        text-indent : 56px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    }
 </style>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
