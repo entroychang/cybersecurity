@@ -11,6 +11,7 @@ $html = '<!DOCTYPE html>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="/bob.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <title>admin page</title>
         <style>
@@ -28,7 +29,7 @@ $html = '<!DOCTYPE html>
     <body>
         <header></header>
         <div class="card justify-content-center align-items-center" style="width: 20rem; margin: 0 auto; float: none; margin-bottom: 10px; justify-content:center; align-items:center;">
-            <img class="card-img-top" src="/img/troll.jpg" alt="Card image cap">
+            <img class="card-img-top" src="https://i.imgur.com/YQWUR9b.jpg" alt="Card image cap" loading="eager">
             <div class="card-body">
                 <h3 class="card-title">Login</h3>
                 <p class="card-title">Here is the secret place. I bet you can never login.</p>
@@ -57,7 +58,7 @@ $html = '<!DOCTYPE html>
         $dom -> loadHTML($html);
         if ($_POST["password"] === "admin") {
             foreach ($dom -> getElementsByTagName("img") as $img) {
-                $img -> setAttribute('src', '/img/really.jpg');
+                $img -> setAttribute('src', 'https://i.imgur.com/dO045eV.png');
             }
             foreach ($dom -> getElementsByTagName("h3") as $h3) {
                 $h3 -> nodeValue = "Really ... ";
@@ -72,7 +73,7 @@ $html = '<!DOCTYPE html>
             $html = $dom -> saveHTML();
         } else {
             foreach ($dom -> getElementsByTagName("img") as $img) {
-                $img -> setAttribute('src', '/img/haha.jpg');
+                $img -> setAttribute('src', 'https://i.imgur.com/LiiYqU1.png');
             }
             foreach ($dom -> getElementsByTagName("h3") as $h3) {
                 $h3 -> nodeValue = "HAHAHAHAHA";
