@@ -1,8 +1,8 @@
 <?php
 
 // use function PHPSTORM_META\type;
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 header('content-type:text/html;charset=utf-8');
 $html = '<!DOCTYPE html>
