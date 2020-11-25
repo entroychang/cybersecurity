@@ -1,8 +1,8 @@
 <?php
 
 // use function PHPSTORM_META\type;
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 header('content-type:text/html;charset=utf-8');
 $html = '<!DOCTYPE html>
@@ -56,7 +56,7 @@ $html = '<!DOCTYPE html>
         $dom = new DOMDocument();
         libxml_use_internal_errors(true);
         $dom -> loadHTML($html);
-        if ($_POST["password"] === "admin") {
+        if ($_POST["password"] === "thisisbobpizza") {
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', 'https://i.imgur.com/dO045eV.png');
             }
