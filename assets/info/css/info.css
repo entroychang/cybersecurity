@@ -1,8 +1,8 @@
 .navbar {
     position: fixed;
     z-index: 999;
-    background-color: rgb(8, 230, 171);
-    color: rgb(160, 86, 86);
+    background-color: rgb(69, 41, 146);
+    color: rgb(237, 221, 221);
     top: 0px;
     width: 100%;
     height: 15vh;
@@ -14,9 +14,8 @@
 }
 
 .footer {
-    position: fixed;
-    background-color: rgb(8, 230, 171);
-    color: rgb(160, 86, 86);
+    background-color: rgb(69, 41, 146);
+    color:rgb(237, 221, 221);
     width: 100%;
     height: 20vh;
     bottom: 0px;
@@ -24,6 +23,7 @@
 
 .footer address {
     height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,13 +32,13 @@
 }
 
 .footer a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .marquee {
     font-size: 1.6rem;
     width: 70%;
-    color: rgb(73, 0, 0);
+    color:rgb(242, 245, 224);
 }
 
 .bg {
@@ -52,10 +52,16 @@
 
 .box {
     position: relative;
-    top: 15vh;
-    height: 90vh;
-    margin-bottom: 20vh;
+    margin-top: 15vh;
+    height: 100%;
     background-color: white;
+}
+
+.box hr {
+    width: 95%;
+    border: 0;
+    background-color: white;
+    border-bottom: 2px solid rgba(75, 54, 54, 0.486);
 }
 
 .top {
@@ -77,14 +83,46 @@
 .text-card {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: start;
-    font-size: 1.5rem;
-    text-indent : 56px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-card img {
+    width: 15%;
+    margin: 10px;
+    border-radius: 999rem;
+    border: 1px solid rgba(0, 0, 0, 0.323);
+}
+
+.post-info {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.post-info h2 {
+    width: 100%;
+    margin: 0px;
+}
+
+.post-info p {
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+.post-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 100%;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 750px) {
