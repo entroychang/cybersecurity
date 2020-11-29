@@ -72,6 +72,7 @@ $html = '<!DOCTYPE html>
             $dom -> getElementsByTagName("div") -> item(1) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
             $html = $dom -> saveHTML();
         } else {
+            http_response_code(404);
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', 'https://i.imgur.com/LiiYqU1.png');
             }
