@@ -51,7 +51,7 @@ $html = '<!DOCTYPE html>
     </html>
     ';
 
-
+    sleep(3);
     if (isset($_POST["password"])) {
         $dom = new DOMDocument();
         libxml_use_internal_errors(true);
