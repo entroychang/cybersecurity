@@ -1,0 +1,22 @@
+.full {
+    height: 100vh;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url(/assets/info/img/pizza.svg);
+    background-position: 25% 75%;
+    background-size: 10%;
+    background-repeat: space;
+    background-color: rgb(167, 166, 166);
+}
+
+.pizza {
+    border: 7px solid;
+    width: 50vmin;
+}
