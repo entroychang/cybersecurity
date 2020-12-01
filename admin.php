@@ -26,6 +26,8 @@ $html = '<!DOCTYPE html>
         background: white;
     }
     body img {
+        padding: 3%;
+        background-color: white;
         border: 5px solid black;
     }
     </style>
