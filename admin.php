@@ -28,7 +28,6 @@ $html = '<!DOCTYPE html>
         </style>
     </head>
     <body class="bg">
-        <header></header>
         <div class="card justify-content-center align-items-center" style="width: 20rem; margin: 0 auto; float: none; margin-bottom: 10px; justify-content:center; align-items:center;">
             <img class="card-img-top" src="https://i.imgur.com/xjDucVA.jpg" alt="Card image cap" loading="eager">
             <div class="card-body">
