@@ -1,3 +1,7 @@
+.full {
+    height: 100vh;
+}
+
 .bg {
     display: flex;
     flex-direction: column;
