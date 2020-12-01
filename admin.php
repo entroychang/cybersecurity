@@ -26,13 +26,12 @@ $html = '<!DOCTYPE html>
         background: white;
     }
     body img {
-        padding: 3%;
-        background-color: white;
         border: 5px solid black;
     }
     </style>
 </head>
-<body class="full bg">
+<body class="full">
+<div class="bg">
     <div class="card justify-content-center align-items-center" style="width: 20rem; margin: 0 auto; float: none; margin-bottom: 10px; justify-content:center; align-items:center;">
         <img class="card-img-top" src="https://i.imgur.com/xjDucVA.jpg" alt="Card image cap" loading="eager">
         <div class="card-body">
@@ -49,6 +48,7 @@ $html = '<!DOCTYPE html>
                 </div>
             </form>
         </div>
+    </div>
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -74,7 +74,7 @@ $html = '<!DOCTYPE html>
                 $p -> nodeValue = $array[$index];
                 $index += 1;
             }
-            $dom -> getElementsByTagName("div") -> item(1) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
+            $dom -> getElementsByTagName("div") -> item(2) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
             $html = $dom -> saveHTML();
         } else {
             http_response_code(400);
