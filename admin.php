@@ -51,7 +51,7 @@ $html = '<!DOCTYPE html>
     </html>
     ';
 
-
+    sleep(3);
     if (isset($_POST["password"])) {
         $dom = new DOMDocument();
         libxml_use_internal_errors(true);
@@ -72,6 +72,7 @@ $html = '<!DOCTYPE html>
             $dom -> getElementsByTagName("div") -> item(1) -> removeChild($dom -> getElementsByTagName("form") -> item(0));
             $html = $dom -> saveHTML();
         } else {
+            http_response_code(400);
             foreach ($dom -> getElementsByTagName("img") as $img) {
                 $img -> setAttribute('src', 'https://i.imgur.com/LiiYqU1.png');
             }
