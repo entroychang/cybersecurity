@@ -26,12 +26,14 @@ $html = '<!DOCTYPE html>
         background: white;
     }
     body img {
+        padding: 3%;
+        background-color: white;
         border: 5px solid black;
     }
     </style>
 </head>
 <body class="full">
-<div class="bg">
+    <div class="bg">
     <div class="card justify-content-center align-items-center" style="width: 20rem; margin: 0 auto; float: none; margin-bottom: 10px; justify-content:center; align-items:center;">
         <img class="card-img-top" src="https://i.imgur.com/xjDucVA.jpg" alt="Card image cap" loading="eager">
         <div class="card-body">
