@@ -27,7 +27,8 @@ $html = '<!DOCTYPE html>
         }
         </style>
     </head>
-    <body class="bg">
+    <body class="full">
+    <div class="bg">
         <div class="card justify-content-center align-items-center" style="width: 20rem; margin: 0 auto; float: none; margin-bottom: 10px; justify-content:center; align-items:center;">
             <img class="card-img-top" src="https://i.imgur.com/xjDucVA.jpg" alt="Card image cap" loading="eager">
             <div class="card-body">
@@ -45,6 +46,7 @@ $html = '<!DOCTYPE html>
                 </form>
             </div>
         </div>
+    </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
