@@ -16,7 +16,13 @@
     background-color: rgb(167, 166, 166);
 }
 
+.sponge {
+    position: absolute;
+    width: 50vmin;
+}
+
 .pizza {
+    z-index: 999;
     border: 7px solid;
     width: 50vmin;
 }
